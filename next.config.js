@@ -1,0 +1,12 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['cdn.builder.io'],
+  },
+  env: {
+    NEXT_PUBLIC_BUILDER_API_KEY: process.env.NEXT_PUBLIC_BUILDER_API_KEY || 'YOUR_BUILDER_API_KEY',
+  },
+};
+
+module.exports = nextConfig;
